@@ -2,7 +2,7 @@ import { Toaster } from "@my-better-t-app/ui/components/sonner";
 import { HeadContent, Outlet, createRootRouteWithContext } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 
-import Header from "@/components/header";
+import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 
 import "../index.css";
@@ -36,12 +36,12 @@ function RootComponent() {
       <HeadContent />
       <ThemeProvider
         attribute="class"
-        defaultTheme="dark"
+        defaultTheme="light"
         disableTransitionOnChange
         storageKey="vite-ui-theme"
       >
         <div className="grid grid-rows-[auto_1fr] h-svh">
-          <Header />
+          <Navbar />
           <Outlet />
         </div>
         <Toaster richColors />
