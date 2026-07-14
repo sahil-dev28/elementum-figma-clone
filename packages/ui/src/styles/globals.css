@@ -139,6 +139,10 @@
 
   --font-display: "Gerbil", system-ui, sans-serif;
   --font-body: "Poppins", system-ui, sans-serif;
+
+  /* Width of the Figma design frame. The site shell is capped here so the
+     layout stays fixed-width on large screens instead of stretching. */
+  --container-site: 1440px;
 }
 
 @layer base {
