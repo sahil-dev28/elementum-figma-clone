@@ -22,7 +22,7 @@ export default function Hero() {
       {/* Decorative shape (top-right corner). Half of it hangs past the design
           frame's right edge and is clipped by the shell's overflow-x-clip. */}
       <img
-        src="/vectors/Ellipse.svg"
+        src="/vectors/Purple%20half%20circle.svg"
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute right-0 top-16 hidden h-28 w-auto max-w-none translate-x-1/2 sm:block sm:h-36"
