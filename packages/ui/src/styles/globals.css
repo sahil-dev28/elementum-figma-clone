@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
@@ -118,6 +118,15 @@
   --radius-4xl: calc(var(--radius) + 16px);
 }
 
+/* Served from apps/web/public/fonts — Vite exposes that app's public/ dir at its own root. */
+@font-face {
+  font-family: "Gerbil";
+  src: url("/fonts/gerbil.otf") format("opentype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-cream: #fffdfa;
   --color-ink: #17181a;
@@ -128,7 +137,7 @@
   --color-mint: #dcf0e1;
   --color-purple: #7c5cf0;
 
-  --font-display: "Outfit", system-ui, sans-serif;
+  --font-display: "Gerbil", system-ui, sans-serif;
   --font-body: "Poppins", system-ui, sans-serif;
 }
 

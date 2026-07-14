@@ -2,8 +2,8 @@ import { Toaster } from "@my-better-t-app/ui/components/sonner";
 import { HeadContent, Outlet, createRootRouteWithContext } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 
-import Navbar from "@/components/navbar";
-import { ThemeProvider } from "@/components/theme-provider";
+import Navbar from "@/components/layout/navbar";
+import { ThemeProvider } from "@/providers/theme-provider";
 
 import "../index.css";
 

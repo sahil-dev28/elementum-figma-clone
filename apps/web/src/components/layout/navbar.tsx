@@ -49,7 +49,7 @@ export default function Navbar() {
         {/* Wordmark (left) */}
         <Link
           to="/"
-          className="font-display text-3xl font-light tracking-wide text-ink"
+          className="font-display text-3xl text-ink"
           onClick={closeMenu}
         >
           Elementum
