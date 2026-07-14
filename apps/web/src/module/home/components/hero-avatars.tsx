@@ -1,24 +1,28 @@
+/* Positions/sizes are measured off the Figma frame (1440px wide) and expressed
+   as percentages of this container, so the collage keeps its shape as it scales.
+   Numbering runs left to right; within a stacked pair, top image first. */
 const AVATARS = [
-  { img: 11, left: "6%", top: "80%", size: "clamp(70px, 9vw, 110px)" },
-  { img: 12, left: "17%", top: "70%", size: "clamp(80px, 10vw, 125px)" },
-  { img: 13, left: "33%", top: "55%", size: "clamp(95px, 12vw, 150px)" },
-  { img: 18, left: "44%", top: "78%", size: "clamp(80px, 10vw, 125px)" },
-  { img: 14, left: "55%", top: "60%", size: "clamp(95px, 12vw, 150px)" },
-  { img: 15, left: "65%", top: "72%", size: "clamp(85px, 11vw, 135px)" },
-  { img: 16, left: "80%", top: "50%", size: "clamp(105px, 13vw, 165px)" },
-  { img: 17, left: "93%", top: "77%", size: "clamp(85px, 11vw, 130px)" },
+  { src: "Avatar 01.svg", left: "5.9%", top: "66.2%", size: "clamp(72px, 11.3vw, 163px)" },
+  { src: "Avatar 02.png", left: "14.8%", top: "56.6%", size: "clamp(70px, 11.1vw, 160px)" },
+  { src: "Avatar 03.svg", left: "33.6%", top: "27.5%", size: "clamp(78px, 12.2vw, 175px)" },
+  { src: "Avatar 04.png", left: "40.1%", top: "75.4%", size: "clamp(74px, 11.7vw, 169px)" },
+  { src: "Avatar 05.png", left: "55.9%", top: "37.0%", size: "clamp(74px, 11.7vw, 169px)" },
+  { src: "Avatar 06.svg", left: "65.1%", top: "56.1%", size: "clamp(70px, 11vw, 158px)" },
+  { src: "Avatar 07.png", left: "79.2%", top: "24.6%", size: "clamp(75px, 11.8vw, 170px)" },
+  { src: "Avatar 08.svg", left: "92.0%", top: "62.4%", size: "clamp(75px, 11.8vw, 170px)" },
 ] as const;
 
 export default function HeroAvatars() {
   return (
-    <div className="relative mx-auto mt-16 h-[260px] w-full max-w-4xl sm:h-[340px] lg:h-[400px]">
-      {AVATARS.map(({ img, left, top, size }) => (
+    // -mx-6 cancels the hero section's px-6 so the collage spans the full design frame.
+    <div className="relative -mx-6 mt-16 h-[240px] sm:h-[300px] lg:h-[350px]">
+      {AVATARS.map(({ src, left, top, size }) => (
         <img
-          key={img}
-          src={`https://i.pravatar.cc/160?img=${img}`}
+          key={src}
+          src={`/images/hero-avatars/${encodeURIComponent(src)}`}
           alt="Team member"
           loading="lazy"
-          className="absolute -translate-x-1/2 -translate-y-1/2 rounded-full object-cover shadow-sm"
+          className="absolute -translate-x-1/2 -translate-y-1/2 rounded-full object-cover"
           style={{ left, top, width: size, height: size }}
         />
       ))}
