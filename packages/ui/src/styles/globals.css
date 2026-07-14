@@ -127,6 +127,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-cream: #fffdfa;
   --color-ink: #17181a;
@@ -138,7 +146,7 @@
   --color-purple: #7c5cf0;
 
   --font-display: "Gerbil", system-ui, sans-serif;
-  --font-body: "Poppins", system-ui, sans-serif;
+  --font-body: "Satoshi", system-ui, sans-serif;
 
   /* Width of the Figma design frame. The site shell is capped here so the
      layout stays fixed-width on large screens instead of stretching. */

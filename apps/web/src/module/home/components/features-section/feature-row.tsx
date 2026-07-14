@@ -6,9 +6,7 @@ type FeatureRowProps = {
   imageSrc: string;
   imageAlt: string;
   href: string;
-  /** Renders the image on the left and the copy on the right. */
   reverse?: boolean;
-  /** Shapes layered around the circular image; positioned by the caller. */
   decor?: ReactNode;
 };
 
@@ -24,11 +22,13 @@ export default function FeatureRow({
   return (
     <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
       <div className={reverse ? "lg:order-2" : undefined}>
-        <h2 className="font-display text-3xl font-medium leading-[1.4] text-ink sm:text-4xl lg:text-5xl">
+        <h2 className="font-display text-3xl font-medium leading-[1.4] text-ink sm:text-4xl lg:text-[56px]">
           {heading}
         </h2>
 
-        <p className="mt-6 max-w-md font-body text-base text-ink-soft">{body}</p>
+        <p className="mt-6 font-body text-lg font-light leading-[1.9] text-ink-soft lg:text-2xl">
+          {body}
+        </p>
 
         <a
           href={href}

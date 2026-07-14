@@ -2,7 +2,7 @@ import FeatureRow from "./feature-row";
 
 export default function Features() {
   return (
-    <section className="relative overflow-x-clip px-6 py-16 sm:py-24">
+    <section className="relative overflow-x-clip px-6 pb-16 pt-0 sm:pb-24">
       {/* Soft pink glow bleeding out from behind the first row's photo. */}
       <div
         aria-hidden="true"
@@ -44,9 +44,16 @@ export default function Features() {
           }
           body={
             <>
-              We are a team of strategists, designers, communicators,
-              researchers. Together, we believe that progress only happens when
-              you refuse to play things safe.
+              <span className="block lg:whitespace-nowrap">
+                We are a team of strategists, designers, communicators,
+                researchers.
+              </span>
+              <span className="block lg:whitespace-nowrap">
+                Together, we believe that progress only happens when you refuse
+              </span>
+              <span className="block lg:whitespace-nowrap">
+                to play things safe.
+              </span>
             </>
           }
           decor={
@@ -94,9 +101,17 @@ export default function Features() {
           }
           body={
             <>
-              We add a layer of fearless insights and action that allows change
-              makers to accelerate their progress in areas such as brand,
-              design, digital, comms and social research.
+              <span className="block lg:whitespace-nowrap">
+                We add a layer of fearless insights and action that allows
+                change
+              </span>
+              <span className="block lg:whitespace-nowrap">
+                makers to accelerate their progress in areas such as brand,
+                design,
+              </span>
+              <span className="block lg:whitespace-nowrap">
+                digital, comms and social research.
+              </span>
             </>
           }
           decor={
