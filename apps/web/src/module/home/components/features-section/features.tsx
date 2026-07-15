@@ -5,7 +5,7 @@ export default function Features() {
   // rows must not be nudged right of it: the shell clips at the frame edge, so
   // anything past 1440 (like the square decor) silently disappears.
   return (
-    <section className="relative overflow-x-clip px-6 pb-16 pt-0 sm:pb-24 lg:px-[7.15%]">
+    <section className="relative overflow-x-clip px-6 pb-0 pt-0 lg:px-[7.15%]">
       <img
         src="/vectors/Ellipse.svg"
         alt=""

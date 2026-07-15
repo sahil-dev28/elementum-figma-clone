@@ -142,7 +142,10 @@
   --color-coral: #f2604e;
   --color-pink: #f8c9de;
   --color-sage: #c3e2c6;
-  --color-mint: #dcf0e1;
+  /* Matches the fill in Green Rectangle .svg — the highlight pills are drawn in
+     CSS (rounded-full) rather than stretching that asset, which would squash
+     its round caps. */
+  --color-mint: #d7eedd;
   --color-purple: #7c5cf0;
 
   --font-display: "Gerbil", system-ui, sans-serif;
