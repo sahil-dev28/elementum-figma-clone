@@ -14,6 +14,16 @@ export default function Features() {
       />
 
       <div className="relative flex flex-col gap-24 lg:gap-32">
+        {/* Connector from the second photo up to the first, dipping just above
+            "See". First child so both photos paint over it, as in the design.
+            lg-only: the connector is meaningless once the rows stack. */}
+        <img
+          src="/vectors/Large%20wiggly.svg"
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute left-[250px] top-[350px] hidden h-[458px] w-[1052px] max-w-none lg:block"
+        />
+
         <FeatureRow
           href="#"
           imageSrc="/images/features/image%2001.svg"
