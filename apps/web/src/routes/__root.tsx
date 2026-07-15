@@ -43,7 +43,7 @@ function RootComponent() {
         {/* Site shell: capped at the design-frame width and centered, so the
             layout stays fixed on large screens. Decorations that bleed past the
             frame edge are clipped here rather than at the viewport. */}
-        <div className="mx-auto grid h-svh w-full max-w-site grid-rows-[auto_1fr] overflow-x-clip">
+        <div className="mx-auto grid min-h-svh w-full max-w-site grid-rows-[auto_1fr] overflow-x-clip">
           <Navbar />
           <Outlet />
         </div>

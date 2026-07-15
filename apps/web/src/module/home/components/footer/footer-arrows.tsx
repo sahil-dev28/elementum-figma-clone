@@ -1,7 +1,3 @@
-/** The pair of coral arrows hooking down into the newsletter heading.
-    Traced from the design reference — there is no arrow export in public/vectors.
-    Each arrow leaves the band's top edge, bulges right, then sweeps down-left to
-    an arrowhead; the second is the same curve shifted 81px across. */
 export default function FooterArrows() {
   return (
     <svg

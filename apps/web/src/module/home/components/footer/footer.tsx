@@ -2,7 +2,6 @@ import FooterArrows from "./footer-arrows";
 import FooterLinkColumn from "./footer-link-column";
 
 const COMPANY = ["Home", "Studio", "Service", "Blog"] as const;
-/* "Accesibility" is spelled this way in the design. */
 const TERMS = [
   "Privacy Policy",
   "Terms & Conditions",
@@ -43,13 +42,13 @@ export default function Footer() {
 
       <div className="mt-[74px] border-t border-ink/60" />
 
-      <div className="mt-20 grid grid-cols-2 gap-x-8 gap-y-12 lg:grid-cols-[327px_400px_327px_1fr] lg:gap-y-0">
+      <div className="mt-20 grid grid-cols-2 gap-x-8 gap-y-12 lg:grid-cols-4 lg:gap-y-0">
         <FooterLinkColumn heading="Company" links={COMPANY} />
         <FooterLinkColumn heading="Terms & Policies" links={TERMS} />
         <FooterLinkColumn heading="Follow Us" links={SOCIAL} />
 
         <div>
-          <h3 className="font-display text-2xl font-medium text-ink lg:text-[28px]">
+          <h3 className="font-display text-lg font-medium text-ink lg:text-[22px]">
             Terms & Policies
           </h3>
           <ul className="mt-6 flex flex-col gap-[21px] font-body text-[17px] text-ink">
