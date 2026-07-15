@@ -1,30 +1,55 @@
 import TestimonialAvatar from "./testimonial-avatar";
 
-/** Customer portraits scattered either side of the quote. Each renders at the
-    asset's own pixel size divided by 1.2, which is the scale the design frame
-    places them at; offsets are measured from the 1440px frame edges. */
 const AVATARS = [
-  { src: "/images/testimonials/image%2001.png", className: "left-[100px] top-0 h-[104px] w-[104px]" },
-  { src: "/images/testimonials/image%2002.png", className: "left-[29px] top-[167px] h-[62px] w-[62px]" },
-  { src: "/images/testimonials/image%2003.png", className: "left-[130px] top-[187px] h-[180px] w-[180px]" },
-  { src: "/images/testimonials/image%2004.png", className: "left-[8px] top-[361px] h-[102px] w-[102px]" },
-  { src: "/images/testimonials/image%2005.png", className: "right-[90px] top-0 h-[122px] w-[122px]" },
-  { src: "/images/testimonials/image%2006.png", className: "right-[261px] top-[62px] h-[75px] w-[75px]" },
-  { src: "/images/testimonials/image%2007.png", className: "right-[227px] top-[180px] h-[93px] w-[93px]" },
-  { src: "/images/testimonials/image%2008.png", className: "right-[27px] top-[278px] h-[220px] w-[220px]" },
+  {
+    src: "/images/testimonials/image%2001.png",
+    className: "left-[100px] top-0 h-[104px] w-[104px]",
+  },
+  {
+    src: "/images/testimonials/image%2002.png",
+    className: "left-[29px] top-[167px] h-[62px] w-[62px]",
+  },
+  {
+    src: "/images/testimonials/image%2003.png",
+    className: "left-[130px] top-[187px] h-[180px] w-[180px]",
+  },
+  {
+    src: "/images/testimonials/image%2004.png",
+    className: "left-[8px] top-[361px] h-[102px] w-[102px]",
+  },
+  {
+    src: "/images/testimonials/image%2005.png",
+    className: "right-[90px] top-0 h-[122px] w-[122px]",
+  },
+  {
+    src: "/images/testimonials/image%2006.png",
+    className: "right-[261px] top-[62px] h-[75px] w-[75px]",
+  },
+  {
+    src: "/images/testimonials/image%2007.png",
+    className: "right-[227px] top-[180px] h-[93px] w-[93px]",
+  },
+  {
+    src: "/images/testimonials/image%2008.png",
+    className: "right-[27px] top-[278px] h-[220px] w-[220px]",
+  },
 ] as const;
 
-const REVIEW =
-  "Elementum  delivered the site with inthe timeline as they requested. Inthe end, the client found a 50% increase in traffic with in days since its launch. They also had an impressive ability to use technologies that the company hasn't used, which have also proved to be easy to use and reliable";
+/* Line breaks are pinned to the design rather than left to natural wrapping,
+   which drifts with font loading. Below lg the card narrows, so it wraps freely. */
+const REVIEW_LINES = [
+  "Elementum  delivered the site with inthe timeline",
+  "as they requested. Inthe end, the client found a 50%",
+  "increase in traffic with in days since its launch. They",
+  "also had an impressive ability to use technologies that",
+  "the company hasn't used, which have also proved to",
+  "be easy to use and reliable",
+] as const;
 
 export default function Testimonials() {
   return (
     <section className="relative overflow-x-clip px-6 pb-16 pt-28 sm:pb-24 lg:px-0 lg:pb-[190px] lg:pt-[184px]">
-      {/* Anchors the avatars to the heading's top edge rather than the section's,
-          so the seam above stays clear of them. */}
       <div className="relative w-full">
-        {/* The portraits are decorative framing for the quote, so they only appear
-            once the frame is wide enough to hold them beside the centred column. */}
         {AVATARS.map((avatar) => (
           <TestimonialAvatar
             key={avatar.src}
@@ -63,16 +88,23 @@ export default function Testimonials() {
             src="/vectors/Oxford%20comma%20.png"
             alt=""
             aria-hidden="true"
-            className="pointer-events-none absolute left-[23px] top-[34px] hidden h-[35px] w-[49px] sm:block"
+            className="pointer-events-none absolute left-[55px] top-[28px] hidden h-[35px] w-[49px] sm:block"
           />
           <img
             src="/vectors/serial%20comma.png"
             alt=""
             aria-hidden="true"
-            className="pointer-events-none absolute bottom-[35px] right-[96px] hidden h-[35px] w-[49px] sm:block"
+            className="pointer-events-none absolute bottom-[28px] right-[145px] hidden h-[35px] w-[49px] sm:block"
           />
           <blockquote className="text-center font-body text-base leading-[1.6] text-ink sm:text-lg lg:text-xl">
-            {REVIEW}
+            <span className="lg:hidden">{REVIEW_LINES.join(" ")}</span>
+            <span className="hidden lg:block">
+              {REVIEW_LINES.map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
+            </span>
           </blockquote>
         </figure>
       </div>
