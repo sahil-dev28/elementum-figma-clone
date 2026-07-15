@@ -20,14 +20,23 @@ const SERVICES = [
 
 export default function Services() {
   return (
-    <section className="relative overflow-x-clip px-6 pb-16 pt-32 sm:pb-24 lg:px-[7.15%] lg:pt-78">
-      <h2 className="font-display text-4xl font-medium leading-[1.4] text-ink sm:text-6xl lg:text-7xl">
+    <section className="relative overflow-x-clip px-6 pb-16 pt-32 sm:pb-24 lg:px-[7.15%] lg:pt-70">
+      {/* Same asset as the features connector, showing its hooked left tail.
+          Runs off the frame's right edge, where the shell clips it. */}
+      <img
+        src="/vectors/Large%20wiggly.svg"
+        alt=""
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-[114px] left-[729px] hidden h-[575px] w-[1323px] max-w-none lg:block"
+      />
+
+      <h2 className="relative font-display text-4xl font-medium leading-[1.4] text-ink sm:text-6xl lg:text-7xl">
         <span className="block">
           What we{" "}
           <span className="relative inline-block px-[0.1em]">
             <span
               aria-hidden="true"
-              className="pointer-events-none absolute -left-[0.12em] top-1/2 h-[1.35em] w-[calc(100%+0.24em)] -translate-y-1/2 rounded-full bg-mint"
+              className="pointer-events-none absolute -left-[0.08em] top-[0.62em] h-[0.95em] w-[calc(100%+0.16em)] -translate-y-1/2 rounded-full bg-mint"
             />
             <span className="relative">can</span>
           </span>
