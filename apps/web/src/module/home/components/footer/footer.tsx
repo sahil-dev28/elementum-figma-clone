@@ -19,7 +19,7 @@ export default function Footer() {
         src="/vectors/Purple%20half%20circle.svg"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute right-[51px] top-[174px] hidden h-[175px] w-[138px] max-w-none lg:block"
+        className="pointer-events-none absolute right-[51px] top-[174px] hidden h-[175px] w-[138px] max-w-none rotate-180 lg:block"
       />
 
       <h2 className="relative text-center font-display text-4xl font-medium leading-[1.02] text-ink sm:text-6xl lg:text-[88px]">

@@ -46,7 +46,6 @@ export default function Navbar() {
   return (
     <header className="relative bg-cream">
       <div className="relative flex items-center justify-between px-8 py-6">
-        {/* Wordmark (left) */}
         <Link
           to="/"
           className="font-display text-3xl text-ink"
@@ -55,14 +54,12 @@ export default function Navbar() {
           Elementum
         </Link>
 
-        {/* Primary nav (centered, >= 900px) */}
         <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-10 min-[900px]:flex">
           {NAV_LINKS.map((item) => (
             <NavLink key={item.label} item={item} className={LINK_CLASS} />
           ))}
         </nav>
 
-        {/* Two-line hamburger (right, always visible) */}
         <button
           type="button"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -75,7 +72,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Dropdown menu panel (opened via hamburger, all widths) */}
       {open ? (
         <nav className="absolute right-8 top-full z-50 flex min-w-40 flex-col gap-3 rounded-lg border border-ink/10 bg-cream px-6 py-4 shadow-lg">
           {NAV_LINKS.map((item) => (

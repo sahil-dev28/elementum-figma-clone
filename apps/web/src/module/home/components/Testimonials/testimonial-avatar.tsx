@@ -1,6 +1,5 @@
 interface TestimonialAvatarProps {
   src: string;
-  /** Position + size utilities placing the avatar in the section frame. */
   className: string;
 }
 

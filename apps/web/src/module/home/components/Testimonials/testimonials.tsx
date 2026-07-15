@@ -35,8 +35,6 @@ const AVATARS = [
   },
 ] as const;
 
-/* Line breaks are pinned to the design rather than left to natural wrapping,
-   which drifts with font loading. Below lg the card narrows, so it wraps freely. */
 const REVIEW_LINES = [
   "Elementum  delivered the site with inthe timeline",
   "as they requested. Inthe end, the client found a 50%",

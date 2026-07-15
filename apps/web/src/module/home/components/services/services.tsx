@@ -21,8 +21,6 @@ const SERVICES = [
 export default function Services() {
   return (
     <section className="relative overflow-x-clip px-6 pb-16 pt-32 sm:pb-24 lg:px-[7.15%] lg:pt-70">
-      {/* Same asset as the features connector, showing its hooked left tail.
-          Runs off the frame's right edge, where the shell clips it. */}
       <img
         src="/vectors/Large%20wiggly.svg"
         alt=""

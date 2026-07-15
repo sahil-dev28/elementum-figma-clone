@@ -1,9 +1,6 @@
 import FeatureRow from "./feature-row";
 
 export default function Features() {
-  // lg:px-[7.15%] ≈ the design's 103px content inset on the 1440px frame. The
-  // rows must not be nudged right of it: the shell clips at the frame edge, so
-  // anything past 1440 (like the square decor) silently disappears.
   return (
     <section className="relative overflow-x-clip px-6 pb-0 pt-0 lg:px-[7.15%]">
       <img
@@ -14,9 +11,6 @@ export default function Features() {
       />
 
       <div className="relative flex flex-col gap-24 lg:gap-32">
-        {/* Connector from the second photo up to the first, dipping just above
-            "See". First child so both photos paint over it, as in the design.
-            lg-only: the connector is meaningless once the rows stack. */}
         <img
           src="/vectors/Large%20wiggly.svg"
           alt=""

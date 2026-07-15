@@ -1,5 +1,4 @@
 type ServiceRowProps = {
-  /** One entry per rendered line — the design breaks every label after two. */
   label: readonly string[];
   title: string;
   href: string;
