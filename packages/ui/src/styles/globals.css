@@ -147,6 +147,8 @@
      its round caps. */
   --color-mint: #d7eedd;
   --color-purple: #7c5cf0;
+  /* Stroke colour of the coral curves — matches Orange wiggly line.svg. */
+  --color-salmon: #ff7171;
 
   --font-display: "Gerbil", system-ui, sans-serif;
   --font-body: "Satoshi", system-ui, sans-serif;
