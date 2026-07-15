@@ -126,13 +126,11 @@ export default function Features() {
                 aria-hidden="true"
                 className="pointer-events-none absolute -left-1 top-0 h-28 w-auto max-w-none sm:h-36"
               />
-              {/* z-10 lifts this one over the photo — unlike the top-left
-                  triangle, the design draws this one in front. */}
               <img
                 src="/vectors/Triangle.svg"
                 alt=""
                 aria-hidden="true"
-                className="pointer-events-none absolute -bottom-6 right-0 z-10 h-32 w-auto max-w-none sm:h-40"
+                className="pointer-events-none absolute -bottom-6 -right-10 z-10 h-32 w-auto max-w-none sm:h-40"
               />
             </>
           }
