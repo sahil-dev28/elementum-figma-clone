@@ -1,15 +1,17 @@
 import FeatureRow from "./feature-row";
 
 export default function Features() {
+  // lg:px-[7.15%] ≈ the design's 103px content inset on the 1440px frame. The
+  // rows must not be nudged right of it: the shell clips at the frame edge, so
+  // anything past 1440 (like the square decor) silently disappears.
   return (
-    <section className="relative overflow-x-clip px-6 pb-16 pt-0 sm:pb-24">
-      {/* Soft pink glow bleeding out from behind the first row's photo. */}
+    <section className="relative overflow-x-clip px-6 pb-16 pt-0 sm:pb-24 lg:px-[7.15%]">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute right-[18%] top-0 h-[420px] w-[420px] -translate-y-1/4 rounded-full bg-pink/50 blur-[90px]"
+        className="pointer-events-none absolute -top-8 left-1/2 h-[260px] w-[260px] -translate-x-1/2 rounded-full bg-pink/50 blur-[90px]"
       />
 
-      <div className="relative flex flex-col gap-24 left-[4%] lg:gap-32">
+      <div className="relative flex flex-col gap-24 lg:gap-32">
         <FeatureRow
           href="#"
           imageSrc="/images/features/image%2001.svg"
