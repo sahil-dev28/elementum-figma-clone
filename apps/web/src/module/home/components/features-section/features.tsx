@@ -9,26 +9,26 @@ export default function Features() {
         className="pointer-events-none absolute right-[18%] top-0 h-[420px] w-[420px] -translate-y-1/4 rounded-full bg-pink/50 blur-[90px]"
       />
 
-      <div className="relative flex flex-col gap-24 lg:gap-32">
+      <div className="relative flex flex-col gap-24 left-[4%] lg:gap-32">
         <FeatureRow
           href="#"
           imageSrc="/images/features/image%2001.svg"
           imageAlt="Two colleagues listening in a boardroom meeting"
           heading={
             <>
-              <span className="block">
+              <span className="block lg:whitespace-nowrap">
                 <span className="relative inline-block">
                   <span className="relative">Tomorrow</span>
                   <img
                     src="/vectors/Yellow%20line.svg"
                     alt=""
                     aria-hidden="true"
-                    className="pointer-events-none absolute -left-[8%] top-[0.95em] h-[0.45em] w-[116%] max-w-none"
+                    className="pointer-events-none absolute left-[0.10em] top-[0.98em] h-[0.65em] w-[105%] max-w-none"
                   />
                 </span>{" "}
                 should
               </span>
-              <span className="block">
+              <span className="block lg:whitespace-nowrap">
                 be better than{" "}
                 <span className="relative inline-block px-[0.1em]">
                   <img
@@ -61,7 +61,7 @@ export default function Features() {
               src="/vectors/Square.svg"
               alt=""
               aria-hidden="true"
-              className="pointer-events-none absolute -right-8 top-4 h-32 w-auto max-w-none sm:-right-12 sm:h-44"
+              className="pointer-events-none absolute -right-8 top-4 h-32 w-auto max-w-none sm:-right-12 sm:h-44 lg:-right-[129px] lg:top-9"
             />
           }
         />
@@ -73,7 +73,7 @@ export default function Features() {
           imageAlt="Two colleagues working together over a laptop"
           heading={
             <>
-              <span className="block">
+              <span className="block lg:whitespace-nowrap">
                 <span className="relative inline-block px-[0.1em]">
                   <img
                     src="/vectors/Green%20Rectangle%20.svg"
@@ -85,7 +85,7 @@ export default function Features() {
                 </span>{" "}
                 how we can
               </span>
-              <span className="block">
+              <span className="block lg:whitespace-nowrap">
                 help you{" "}
                 <span className="relative inline-block">
                   <span className="relative">progress</span>
@@ -93,7 +93,7 @@ export default function Features() {
                     src="/vectors/Yellow%20line.svg"
                     alt=""
                     aria-hidden="true"
-                    className="pointer-events-none absolute -left-[8%] top-[0.95em] h-[0.45em] w-[116%] max-w-none"
+                    className="pointer-events-none absolute -left-[13%] top-[0.98em] h-[0.65em] w-[125%] max-w-none"
                   />
                 </span>
               </span>
@@ -120,7 +120,7 @@ export default function Features() {
                 src="/vectors/Triangle.svg"
                 alt=""
                 aria-hidden="true"
-                className="pointer-events-none absolute -left-6 top-0 h-28 w-auto max-w-none sm:h-36"
+                className="pointer-events-none absolute -left-1 top-0 h-28 w-auto max-w-none sm:h-36"
               />
               <img
                 src="/vectors/Triangle.svg"

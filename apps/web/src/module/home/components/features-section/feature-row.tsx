@@ -20,19 +20,19 @@ export default function FeatureRow({
   decor,
 }: FeatureRowProps) {
   return (
-    <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+    <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-32">
       <div className={reverse ? "lg:order-2" : undefined}>
-        <h2 className="font-display text-3xl font-medium leading-[1.4] text-ink sm:text-4xl lg:text-[56px]">
+        <h2 className="font-display text-xl font-medium leading-[1.4] text-ink sm:text-3xl lg:text-[42px]">
           {heading}
         </h2>
 
-        <p className="mt-6 font-body text-lg font-light leading-[1.9] text-ink-soft lg:text-2xl">
+        <p className="mt-4 font-body text-lg font-light leading-[1.5] text-ink-soft lg:text-lg">
           {body}
         </p>
 
         <a
           href={href}
-          className="group mt-8 inline-flex items-center gap-4 font-body text-sm font-medium text-ink"
+          className="group mt-6 inline-flex items-center gap-4 font-body text-sm font-medium text-ink"
         >
           Read more
           <span className="relative h-px w-24 bg-ink transition-all group-hover:w-28">
@@ -42,7 +42,11 @@ export default function FeatureRow({
       </div>
 
       <div className={reverse ? "lg:order-1" : undefined}>
-        <div className="relative mx-auto aspect-square w-full max-w-[320px] sm:max-w-[420px] lg:max-w-[460px]">
+        <div
+          className={`relative mx-auto aspect-square w-full max-w-[320px] sm:max-w-[420px] lg:max-w-[420px] ${
+            reverse ? "lg:ml-0 lg:mr-auto" : "lg:ml-auto lg:mr-14"
+          }`}
+        >
           {decor}
           <img
             src={imageSrc}

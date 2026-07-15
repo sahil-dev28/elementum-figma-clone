@@ -1,8 +1,10 @@
 import HeroAvatars from "./hero-avatars";
 
 export default function Hero() {
+  // pb-0: the design levels avatar 04's bottom edge with the features
+  // section's first photo, so the avatar row runs right up to it.
   return (
-    <section className="relative overflow-x-clip px-6 pb-8 pt-36 sm:pb-10 sm:pt-48">
+    <section className="relative overflow-x-clip px-6 pb-0 pt-36 sm:pt-48">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute left-0 top-36 hidden h-[360px] w-40 sm:top-48 lg:block"
