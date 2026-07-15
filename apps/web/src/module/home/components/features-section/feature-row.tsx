@@ -44,7 +44,7 @@ export default function FeatureRow({
       <div className={reverse ? "lg:order-1" : undefined}>
         <div
           className={`relative mx-auto aspect-square w-full max-w-[320px] sm:max-w-[420px] lg:max-w-[420px] ${
-            reverse ? "lg:ml-0 lg:mr-auto" : "lg:ml-auto lg:mr-14"
+            reverse ? "lg:ml-0 lg:mr-auto" : "lg:ml-auto lg:mr-6"
           }`}
         >
           {decor}

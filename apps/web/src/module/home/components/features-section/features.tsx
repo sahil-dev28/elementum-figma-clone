@@ -6,9 +6,11 @@ export default function Features() {
   // anything past 1440 (like the square decor) silently disappears.
   return (
     <section className="relative overflow-x-clip px-6 pb-16 pt-0 sm:pb-24 lg:px-[7.15%]">
-      <div
+      <img
+        src="/vectors/Ellipse.svg"
+        alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute -top-8 left-1/2 h-[260px] w-[260px] -translate-x-1/2 rounded-full bg-pink/50 blur-[90px]"
+        className="pointer-events-none absolute -top-[120px] left-1/2 h-[420px] w-[420px] max-w-none -translate-x-1/2 lg:-top-[221px] lg:h-[766px] lg:w-[766px]"
       />
 
       <div className="relative flex flex-col gap-24 lg:gap-32">
@@ -63,7 +65,7 @@ export default function Features() {
               src="/vectors/Square.svg"
               alt=""
               aria-hidden="true"
-              className="pointer-events-none absolute -right-8 top-4 h-32 w-auto max-w-none sm:-right-12 sm:h-44 lg:-right-[129px] lg:top-9"
+              className="pointer-events-none absolute -right-8 top-10 h-32 w-auto max-w-none sm:-right-12 sm:h-44 lg:-right-[100px] lg:top-9"
             />
           }
         />
@@ -124,11 +126,13 @@ export default function Features() {
                 aria-hidden="true"
                 className="pointer-events-none absolute -left-1 top-0 h-28 w-auto max-w-none sm:h-36"
               />
+              {/* z-10 lifts this one over the photo — unlike the top-left
+                  triangle, the design draws this one in front. */}
               <img
                 src="/vectors/Triangle.svg"
                 alt=""
                 aria-hidden="true"
-                className="pointer-events-none absolute -bottom-6 right-0 h-32 w-auto max-w-none sm:h-40"
+                className="pointer-events-none absolute -bottom-6 right-0 z-10 h-32 w-auto max-w-none sm:h-40"
               />
             </>
           }
