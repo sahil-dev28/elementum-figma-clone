@@ -26,18 +26,21 @@ export default function FeatureRow({
           {heading}
         </h2>
 
-        <p className="mt-4 font-body text-lg font-light leading-[1.5] text-ink-soft lg:text-lg">
+        <p className="mt-4 font-body text-lg font-light leading-[1.5] text-ink lg:text-lg">
           {body}
         </p>
 
         <a
           href={href}
-          className="group mt-6 inline-flex items-center gap-4 font-body text-sm font-medium text-ink"
+          className="group mt-6 inline-flex items-center gap-2 font-body text-sm font-bold text-black"
         >
           Read more
-          <span className="relative h-px w-24 bg-ink transition-all group-hover:w-28">
-            <span className="absolute -right-px -top-[3px] h-[7px] w-[7px] rotate-45 border-r border-t border-ink" />
-          </span>
+          <img
+            src="/vectors/arrow.svg"
+            alt=""
+            aria-hidden="true"
+            className="h-2 w-28 mt-2 transition-transform duration-300 group-hover:translate-x-2"
+          />
         </a>
       </div>
 
