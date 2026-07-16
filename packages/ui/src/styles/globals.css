@@ -165,6 +165,9 @@
   /* Gentle idle float for the hero purple half-circle. */
   --animate-half-circle-float: half-circle-float 7s ease-in-out infinite;
 
+  /* Same float for the footer half-circle, keeping its 180deg flip. */
+  --animate-half-circle-float-180: half-circle-float-180 7s ease-in-out infinite;
+
   /* Slow continuous spin for the services circle decor. Keeps the
      translateY(-50%) vertical centering baked in. */
   --animate-decor-spin: decor-spin 24s linear infinite;
@@ -190,6 +193,16 @@
   }
 }
 
+@keyframes half-circle-float-180 {
+  0%,
+  100% {
+    transform: translateY(0) rotate(180deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(176deg);
+  }
+}
+
 @keyframes decor-spin {
   from {
     transform: translateY(-50%) rotate(0deg);
@@ -204,6 +217,7 @@
   .animate-wiggle-drift,
   .animate-wiggle-drift-slow,
   .animate-half-circle-float,
+  .animate-half-circle-float-180,
   .animate-decor-spin {
     animation: none;
   }

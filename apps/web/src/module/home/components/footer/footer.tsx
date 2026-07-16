@@ -16,7 +16,7 @@ export default function Footer() {
           src="/vectors/purple-half-circle.svg"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute right-12.75 top-43.5 hidden h-43.75 w-34.5 max-w-none rotate-180 lg:block"
+          className="animate-half-circle-float-180 pointer-events-none absolute right-12.75 top-43.5 hidden h-43.75 w-34.5 max-w-none lg:block"
         />
 
         <h2 className="relative text-center font-display text-4xl font-medium leading-[1.02] text-ink sm:text-6xl lg:text-[88px]">
@@ -31,7 +31,7 @@ export default function Footer() {
         <div className="mt-6 flex justify-center">
           <button
             type="button"
-            className="inline-flex h-13 w-43.75 items-center justify-center rounded-full bg-ink font-body text-[15px] font-semibold text-cream"
+            className="inline-flex h-13 w-43.75 items-center justify-center rounded-full bg-ink font-body text-[15px] font-semibold text-cream transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:shadow-lg hover:shadow-ink/25 active:scale-95"
           >
             Subscribe Now
           </button>
