@@ -1,14 +1,10 @@
 import FooterArrows from "./footer-arrows";
 import FooterLinkColumn from "./footer-link-column";
-
-const COMPANY = ["Home", "Studio", "Service", "Blog"] as const;
-const TERMS = [
-  "Privacy Policy",
-  "Terms & Conditions",
-  "Explore",
-  "Accesibility",
-] as const;
-const SOCIAL = ["Instagram", "LinkedIn", "Youtube", "Twitter"] as const;
+import {
+  FOOTER_COMPANY,
+  FOOTER_SOCIAL,
+  FOOTER_TERMS,
+} from "../../utils/constants";
 
 export default function Footer() {
   return (
@@ -16,7 +12,7 @@ export default function Footer() {
       <FooterArrows />
 
       <img
-        src="/vectors/Purple%20half%20circle.svg"
+        src="/vectors/purple-half-circle.svg"
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute right-[51px] top-[174px] hidden h-[175px] w-[138px] max-w-none rotate-180 lg:block"
@@ -43,9 +39,9 @@ export default function Footer() {
       <div className="mt-[74px] border-t border-ink/60" />
 
       <div className="mt-20 grid grid-cols-2 gap-x-8 gap-y-12 lg:flex lg:justify-between lg:gap-y-0">
-        <FooterLinkColumn heading="Company" links={COMPANY} />
-        <FooterLinkColumn heading="Terms & Policies" links={TERMS} />
-        <FooterLinkColumn heading="Follow Us" links={SOCIAL} />
+        <FooterLinkColumn heading="Company" links={FOOTER_COMPANY} />
+        <FooterLinkColumn heading="Terms & Policies" links={FOOTER_TERMS} />
+        <FooterLinkColumn heading="Follow Us" links={FOOTER_SOCIAL} />
 
         <div>
           <h3 className="font-display text-lg font-medium text-ink lg:text-[22px]">

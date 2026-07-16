@@ -8,22 +8,22 @@ export default function Hero() {
         className="pointer-events-none absolute left-0 top-36 hidden h-[360px] w-40 sm:top-48 lg:block"
       >
         <img
-          src="/vectors/Orange%20wiggly%20line.svg"
+          src="/vectors/orange-wiggly-line.svg"
           alt=""
           className="absolute left-0 top-0 h-full w-auto max-w-none"
         />
         <img
-          src="/vectors/Black%20wiggly%20line.svg"
+          src="/vectors/black-wiggly-line.svg"
           alt=""
           className="absolute left-12 top-0 h-full w-auto max-w-none"
         />
       </div>
 
       <img
-        src="/vectors/Purple%20half%20circle.svg"
+        src="/vectors/purple-half-circle.svg"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute right-0 top-16 hidden h-28 w-auto max-w-none translate-x-1/2 sm:block sm:h-36"
+        className="pointer-events-none absolute right-8 top-16 hidden h-28 w-auto max-w-none translate-x-1/2 sm:block sm:h-36"
       />
 
       <div className="mx-auto flex max-w-5xl flex-col items-center text-center">
@@ -33,7 +33,7 @@ export default function Hero() {
             <span className="relative inline-block">
               <span className="relative">thinkers</span>
               <img
-                src="/vectors/Yellow%20line.svg"
+                src="/vectors/yellow-line.svg"
                 alt=""
                 aria-hidden="true"
                 className="pointer-events-none absolute -left-[15.5%] top-[0.97em] h-[0.5em] w-[127.5%] max-w-none"
@@ -45,7 +45,7 @@ export default function Hero() {
             doers were{" "}
             <span className="relative inline-block">
               <img
-                src="/vectors/Pink%20Rectangle.svg"
+                src="/vectors/pink-rectangle.svg"
                 alt=""
                 aria-hidden="true"
                 className="pointer-events-none absolute left-[30%] top-1/2 h-[1.45em] w-[75%] max-w-none -translate-y-1/2"
@@ -57,7 +57,7 @@ export default function Hero() {
             the{" "}
             <span className="relative inline-block px-[0.1em]">
               <img
-                src="/vectors/Green%20Rectangle%20.svg"
+                src="/vectors/green-rectangle.svg"
                 alt=""
                 aria-hidden="true"
                 className="pointer-events-none absolute -left-[0.25em] top-1/2 h-[1.35em] w-[calc(100%+0.5em)] max-w-none -translate-y-1/2"
