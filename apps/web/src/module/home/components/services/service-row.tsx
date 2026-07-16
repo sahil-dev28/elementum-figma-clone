@@ -31,7 +31,7 @@ export default function ServiceRow({
               src={decor}
               alt=""
               aria-hidden="true"
-              className="pointer-events-none absolute left-[59.50%] top-1/2 z-0 h-11 w-11 -translate-y-1/2 rounded-full object-cover sm:h-16 sm:w-16 lg:h-29 lg:w-29"
+              className="animate-decor-spin pointer-events-none absolute left-[66%] mt-15 top-1/2 z-0 h-11 w-11 -translate-y-1/2 rounded-full object-cover sm:h-16 sm:w-16 lg:h-29 lg:w-29"
             />
           )}
           <span className="relative z-10">{title}</span>

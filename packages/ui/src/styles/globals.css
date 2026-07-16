@@ -164,6 +164,10 @@
 
   /* Gentle idle float for the hero purple half-circle. */
   --animate-half-circle-float: half-circle-float 7s ease-in-out infinite;
+
+  /* Slow continuous spin for the services circle decor. Keeps the
+     translateY(-50%) vertical centering baked in. */
+  --animate-decor-spin: decor-spin 24s linear infinite;
 }
 
 @keyframes wiggle-drift {
@@ -186,11 +190,21 @@
   }
 }
 
+@keyframes decor-spin {
+  from {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
 /* Respect users who prefer reduced motion. */
 @media (prefers-reduced-motion: reduce) {
   .animate-wiggle-drift,
   .animate-wiggle-drift-slow,
-  .animate-half-circle-float {
+  .animate-half-circle-float,
+  .animate-decor-spin {
     animation: none;
   }
 }
