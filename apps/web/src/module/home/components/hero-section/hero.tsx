@@ -2,7 +2,7 @@ import HeroAvatars from "./hero-avatars";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-x-clip px-6 pb-0 pt-36 sm:pt-48">
+    <section className="relative overflow-x-clip px-6 pb-0 pt-36 sm:pt-48 md:px-10">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute left-0 top-36 hidden h-90 w-40 sm:top-48 lg:block"

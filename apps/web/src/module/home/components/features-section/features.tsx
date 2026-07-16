@@ -2,12 +2,12 @@ import FeatureRow from "./feature-row";
 
 export default function Features() {
   return (
-    <section className="relative overflow-x-clip px-6 pb-0 pt-0 lg:px-[7.15%]">
+    <section className="relative overflow-x-clip px-6 pb-0 pt-0 md:px-10 lg:px-[7.15%]">
       <img
         src="/vectors/ellipse.svg"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute -top-30 left-1/2 h-105 w-105 max-w-none -translate-x-1/2 lg:-top-55.25 lg:h-191.5 lg:w-191.5"
+        className="pointer-events-none absolute -top-20 left-1/2 h-64 w-64 max-w-none -translate-x-1/2 sm:-top-30 sm:h-105 sm:w-105 lg:-top-55.25 lg:h-191.5 lg:w-191.5"
       />
 
       <div className="relative flex flex-col gap-24 lg:gap-32">
@@ -69,7 +69,7 @@ export default function Features() {
               src="/vectors/square.svg"
               alt=""
               aria-hidden="true"
-              className="pointer-events-none absolute -right-8 top-10 h-32 w-auto max-w-none sm:-right-12 sm:h-44 lg:-right-25 lg:top-9"
+              className="pointer-events-none absolute -right-8 top-10 h-24 w-auto max-w-none sm:-right-12 sm:h-44 lg:-right-25 lg:top-9"
             />
           }
         />
@@ -128,13 +128,13 @@ export default function Features() {
                 src="/vectors/triangle.svg"
                 alt=""
                 aria-hidden="true"
-                className="pointer-events-none absolute -left-1 top-0 h-28 w-auto max-w-none sm:h-36"
+                className="pointer-events-none absolute -left-1 top-0 h-20 w-auto max-w-none sm:h-36"
               />
               <img
                 src="/vectors/triangle.svg"
                 alt=""
                 aria-hidden="true"
-                className="pointer-events-none absolute -bottom-6 -right-10 z-10 h-32 w-auto max-w-none sm:h-40"
+                className="pointer-events-none absolute -bottom-6 -right-10 z-10 h-24 w-auto max-w-none sm:h-40"
               />
             </>
           }

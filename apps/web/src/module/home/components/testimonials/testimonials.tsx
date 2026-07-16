@@ -6,7 +6,7 @@ import {
 
 export default function Testimonials() {
   return (
-    <section className="relative overflow-x-clip px-6 pb-16 pt-28 sm:pb-24 lg:px-0 lg:pb-47.5 lg:pt-46">
+    <section className="relative overflow-x-clip px-6 pb-16 pt-28 sm:pb-24 md:px-10 lg:px-0 lg:pb-47.5 lg:pt-46">
       <div className="relative w-full">
         {TESTIMONIAL_AVATARS.map((avatar) => (
           <TestimonialAvatar

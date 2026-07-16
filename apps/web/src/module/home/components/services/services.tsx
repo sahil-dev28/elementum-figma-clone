@@ -3,7 +3,7 @@ import { SERVICES } from "../../utils/constants";
 
 export default function Services() {
   return (
-    <section className="relative overflow-x-clip px-6 pb-16 pt-32 sm:pb-24 lg:px-[7.15%] lg:pt-70">
+    <section className="relative overflow-x-clip px-6 pb-16 pt-32 sm:pb-24 md:px-10 lg:px-[7.15%] lg:pt-70">
       <img
         src="/vectors/large-wiggly.svg"
         alt=""

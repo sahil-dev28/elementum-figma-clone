@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const NAV_LINKS = [
   { label: "Home", to: "/" },
@@ -40,12 +40,36 @@ function NavLink({
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const menuRef = useRef<HTMLElement>(null);
+  const toggleRef = useRef<HTMLButtonElement>(null);
 
   const closeMenu = () => setOpen(false);
 
+  useEffect(() => {
+    if (!open) return;
+
+    const handlePointer = (event: MouseEvent) => {
+      const target = event.target as Node;
+      if (menuRef.current?.contains(target)) return;
+      if (toggleRef.current?.contains(target)) return;
+      setOpen(false);
+    };
+
+    const handleKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+
+    document.addEventListener("mousedown", handlePointer);
+    document.addEventListener("keydown", handleKey);
+    return () => {
+      document.removeEventListener("mousedown", handlePointer);
+      document.removeEventListener("keydown", handleKey);
+    };
+  }, [open]);
+
   return (
     <header className="relative bg-cream">
-      <div className="relative flex items-center justify-between px-8 py-6">
+      <div className="relative flex items-center justify-between px-6 py-6 sm:px-8">
         <Link
           to="/"
           className="font-display text-3xl text-ink"
@@ -61,6 +85,7 @@ export default function Navbar() {
         </nav>
 
         <button
+          ref={toggleRef}
           type="button"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
@@ -73,7 +98,10 @@ export default function Navbar() {
       </div>
 
       {open ? (
-        <nav className="absolute right-8 top-full z-50 flex min-w-40 flex-col gap-3 rounded-lg border border-ink/10 bg-cream px-6 py-4 shadow-lg">
+        <nav
+          ref={menuRef}
+          className="absolute right-6 top-full z-50 flex min-w-40 flex-col gap-3 rounded-lg border border-ink/10 bg-cream px-6 py-4 shadow-lg sm:right-8"
+        >
           {NAV_LINKS.map((item) => (
             <NavLink
               key={item.label}

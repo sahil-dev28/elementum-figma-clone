@@ -9,7 +9,7 @@ import {
 export default function Footer() {
   return (
     <footer className="mx-[calc(50%-50vw)] w-screen bg-mint">
-      <div className="relative mx-auto w-full max-w-site overflow-hidden px-6 pb-8 pt-20 lg:px-[7.15%] lg:pt-27">
+      <div className="relative mx-auto w-full max-w-site overflow-hidden px-6 pb-8 pt-20 md:px-10 lg:px-[7.15%] lg:pt-27">
         <FooterArrows />
 
         <img
@@ -39,7 +39,7 @@ export default function Footer() {
 
         <div className="mt-18.5 border-t border-ink/60" />
 
-        <div className="mt-20 grid grid-cols-2 gap-x-8 gap-y-12 lg:flex lg:justify-between lg:gap-y-0">
+        <div className="mt-20 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-8 lg:flex lg:justify-between lg:gap-y-0">
           <FooterLinkColumn heading="Company" links={FOOTER_COMPANY} />
           <FooterLinkColumn heading="Terms & Policies" links={FOOTER_TERMS} />
           <FooterLinkColumn heading="Follow Us" links={FOOTER_SOCIAL} />
