@@ -1,28 +1,11 @@
 import ServiceRow from "./service-row";
-
-const SERVICES = [
-  {
-    label: ["Office of multiple", "interest content"],
-    title: "Collaborative & partnership",
-    href: "#",
-  },
-  {
-    label: ["The hanger US Air force", "digital experimental"],
-    title: "We talk about our weight",
-    href: "#",
-  },
-  {
-    label: ["Delta faucet content,", "social, digital"],
-    title: "Piloting digital confidence",
-    href: "#",
-  },
-] as const;
+import { SERVICES } from "../../utils/constants";
 
 export default function Services() {
   return (
     <section className="relative overflow-x-clip px-6 pb-16 pt-32 sm:pb-24 lg:px-[7.15%] lg:pt-70">
       <img
-        src="/vectors/Large%20wiggly.svg"
+        src="/vectors/large-wiggly.svg"
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute -top-[114px] left-[729px] hidden h-[575px] w-[1323px] max-w-none lg:block"
@@ -43,7 +26,7 @@ export default function Services() {
           <span className="relative inline-block">
             <span className="relative">offer</span>
             <img
-              src="/vectors/Yellow%20line.svg"
+              src="/vectors/yellow-line.svg"
               alt=""
               aria-hidden="true"
               className="pointer-events-none absolute -left-[8%] top-[0.98em] h-[0.5em] w-[118%] max-w-none"
