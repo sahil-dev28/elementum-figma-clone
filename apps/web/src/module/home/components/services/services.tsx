@@ -29,7 +29,7 @@ export default function Services() {
               src="/vectors/yellow-line.svg"
               alt=""
               aria-hidden="true"
-              className="pointer-events-none absolute left-[-8%] top-[0.98em] h-[0.5em] w-[118%] max-w-none"
+              className="pointer-events-none absolute left-[-6%] top-[1em] h-[0.45em] w-[123%] max-w-none"
             />
           </span>{" "}
           you!
