@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="relative overflow-x-clip px-6 pb-0 pt-36 sm:pt-48">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute left-0 top-36 hidden h-[360px] w-40 sm:top-48 lg:block"
+        className="pointer-events-none absolute left-0 top-36 hidden h-90 w-40 sm:top-48 lg:block"
       >
         <img
           src="/vectors/orange-wiggly-line.svg"
@@ -36,7 +36,7 @@ export default function Hero() {
                 src="/vectors/yellow-line.svg"
                 alt=""
                 aria-hidden="true"
-                className="pointer-events-none absolute -left-[15.5%] top-[0.97em] h-[0.5em] w-[127.5%] max-w-none"
+                className="pointer-events-none absolute left-[-15.5%] top-[0.97em] h-[0.5em] w-[127.5%] max-w-none"
               />
             </span>{" "}
             and
@@ -60,7 +60,7 @@ export default function Hero() {
                 src="/vectors/green-rectangle.svg"
                 alt=""
                 aria-hidden="true"
-                className="pointer-events-none absolute -left-[0.25em] top-1/2 h-[1.35em] w-[calc(100%+0.5em)] max-w-none -translate-y-1/2"
+                className="pointer-events-none absolute left-[-0.25em] top-1/2 h-[1.35em] w-[calc(100%+0.5em)] max-w-none -translate-y-1/2"
               />
               <span className="relative">status</span>
             </span>{" "}

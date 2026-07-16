@@ -7,7 +7,7 @@ export default function Features() {
         src="/vectors/ellipse.svg"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute -top-[120px] left-1/2 h-[420px] w-[420px] max-w-none -translate-x-1/2 lg:-top-[221px] lg:h-[766px] lg:w-[766px]"
+        className="pointer-events-none absolute -top-30 left-1/2 h-105 w-105 max-w-none -translate-x-1/2 lg:-top-55.25 lg:h-191.5 lg:w-191.5"
       />
 
       <div className="relative flex flex-col gap-24 lg:gap-32">
@@ -15,7 +15,7 @@ export default function Features() {
           src="/vectors/large-wiggly.svg"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute left-[250px] top-[350px] hidden h-[458px] w-[1052px] max-w-none lg:block"
+          className="pointer-events-none absolute left-62.5 top-87.5 hidden h-114.5 w-263 max-w-none lg:block"
         />
 
         <FeatureRow
@@ -43,7 +43,7 @@ export default function Features() {
                     src="/vectors/green-rectangle.svg"
                     alt=""
                     aria-hidden="true"
-                    className="pointer-events-none absolute -left-[0.25em] top-1/2 h-[1.35em] w-[calc(100%+0.5em)] max-w-none -translate-y-1/2"
+                    className="pointer-events-none absolute left-[-0.25em] top-1/2 h-[1.35em] w-[calc(100%+0.5em)] max-w-none -translate-y-1/2"
                   />
                   <span className="relative">today</span>
                 </span>
@@ -69,7 +69,7 @@ export default function Features() {
               src="/vectors/square.svg"
               alt=""
               aria-hidden="true"
-              className="pointer-events-none absolute -right-8 top-10 h-32 w-auto max-w-none sm:-right-12 sm:h-44 lg:-right-[100px] lg:top-9"
+              className="pointer-events-none absolute -right-8 top-10 h-32 w-auto max-w-none sm:-right-12 sm:h-44 lg:-right-25 lg:top-9"
             />
           }
         />
@@ -87,7 +87,7 @@ export default function Features() {
                     src="/vectors/green-rectangle.svg"
                     alt=""
                     aria-hidden="true"
-                    className="pointer-events-none absolute -left-[0.25em] top-1/2 h-[1.35em] w-[calc(100%+0.5em)] max-w-none -translate-y-1/2"
+                    className="pointer-events-none absolute left-[-0.25em] top-1/2 h-[1.35em] w-[calc(100%+0.5em)] max-w-none -translate-y-1/2"
                   />
                   <span className="relative">See</span>
                 </span>{" "}
@@ -101,7 +101,7 @@ export default function Features() {
                     src="/vectors/yellow-line.svg"
                     alt=""
                     aria-hidden="true"
-                    className="pointer-events-none absolute -left-[13%] top-[0.98em] h-[0.65em] w-[125%] max-w-none"
+                    className="pointer-events-none absolute left-[-13%] top-[0.98em] h-[0.65em] w-[125%] max-w-none"
                   />
                 </span>
               </span>

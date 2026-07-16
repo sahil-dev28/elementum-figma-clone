@@ -2,7 +2,7 @@ import { HERO_AVATARS } from "../../utils/constants";
 
 export default function HeroAvatars() {
   return (
-    <div className="relative -mx-6 mt-16 h-[240px] sm:h-[300px] lg:h-[350px]">
+    <div className="relative -mx-6 mt-16 h-60 sm:h-75 lg:h-87.5">
       {HERO_AVATARS.map(({ src, left, top, size }) => (
         <img
           key={src}

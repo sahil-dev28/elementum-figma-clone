@@ -8,7 +8,7 @@ export default function Services() {
         src="/vectors/large-wiggly.svg"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute -top-[114px] left-[729px] hidden h-[575px] w-[1323px] max-w-none lg:block"
+        className="pointer-events-none absolute -top-28.5 left-182.25 hidden h-143.75 w-330.75 max-w-none lg:block"
       />
 
       <h2 className="relative font-display text-4xl font-medium leading-[1.4] text-ink sm:text-6xl lg:text-7xl">
@@ -17,7 +17,7 @@ export default function Services() {
           <span className="relative inline-block px-[0.1em]">
             <span
               aria-hidden="true"
-              className="pointer-events-none absolute -left-[0.08em] top-[0.62em] h-[0.95em] w-[calc(100%+0.16em)] -translate-y-1/2 rounded-full bg-mint"
+              className="pointer-events-none absolute left-[-0.08em] top-[0.62em] h-[0.95em] w-[calc(100%+0.16em)] -translate-y-1/2 rounded-full bg-mint"
             />
             <span className="relative">can</span>
           </span>
@@ -29,7 +29,7 @@ export default function Services() {
               src="/vectors/yellow-line.svg"
               alt=""
               aria-hidden="true"
-              className="pointer-events-none absolute -left-[8%] top-[0.98em] h-[0.5em] w-[118%] max-w-none"
+              className="pointer-events-none absolute left-[-8%] top-[0.98em] h-[0.5em] w-[118%] max-w-none"
             />
           </span>{" "}
           you!

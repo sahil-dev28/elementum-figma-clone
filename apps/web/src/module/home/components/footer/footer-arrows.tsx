@@ -5,13 +5,13 @@ export default function FooterArrows() {
         src="/vectors/wiggly-arrow.svg"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute -top-[30px] left-[450px] hidden max-w-none lg:block"
+        className="pointer-events-none absolute -top-7.5 left-112.5 hidden max-w-none lg:block"
       />
       <img
         src="/vectors/wiggly-arrow.svg"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute -top-[30px] left-[540px] hidden max-w-none lg:block"
+        className="pointer-events-none absolute -top-7.5 left-135 hidden max-w-none lg:block"
       />
     </>
   );

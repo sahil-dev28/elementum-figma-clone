@@ -40,7 +40,7 @@ function RootComponent() {
         disableTransitionOnChange
         storageKey="vite-ui-theme"
       >
-        <div className="mx-auto grid min-h-svh w-full max-w-site grid-rows-[auto_1fr] overflow-x-clip">
+        <div className="mx-auto grid min-h-svh w-full max-w-site grid-rows-[auto_1fr]">
           <Navbar />
           <Outlet />
         </div>
