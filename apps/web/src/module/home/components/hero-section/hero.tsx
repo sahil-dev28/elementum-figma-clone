@@ -5,17 +5,17 @@ export default function Hero() {
     <section className="relative overflow-x-clip px-6 pb-0 pt-36 sm:pt-48 md:px-10">
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute left-0 top-36 hidden h-90 w-40 sm:top-48 lg:block"
+        className="pointer-events-none absolute left-0 top-36  h-90 w-40 sm:top-48 lg:block"
       >
         <img
           src="/vectors/orange-wiggly-line.svg"
           alt=""
-          className="absolute left-0 top-0 h-full w-auto max-w-none"
+          className="animate-wiggle-drift absolute left-0 top-0 h-full w-auto max-w-none"
         />
         <img
           src="/vectors/black-wiggly-line.svg"
           alt=""
-          className="absolute left-12 top-0 h-full w-auto max-w-none"
+          className="animate-wiggle-drift-slow absolute left-12 top-0 h-full w-auto max-w-none"
         />
       </div>
 
@@ -23,7 +23,7 @@ export default function Hero() {
         src="/vectors/purple-half-circle.svg"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute right-8 top-16 hidden h-28 w-auto max-w-none translate-x-1/2 sm:block sm:h-36"
+        className="animate-half-circle-float pointer-events-none absolute right-8 top-16 hidden h-28 w-auto max-w-none sm:block sm:h-36"
       />
 
       <div className="mx-auto flex max-w-5xl flex-col items-center text-center">

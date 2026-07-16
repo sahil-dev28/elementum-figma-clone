@@ -90,7 +90,7 @@ export default function Navbar() {
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((prev) => !prev)}
-          className="flex flex-col items-end gap-1.5"
+          className="mr-10 flex flex-col items-end gap-1.5 sm:mr-40"
         >
           <span className="block h-0.5 w-7 bg-ink" />
           <span className="block h-0.5 w-7 bg-ink" />

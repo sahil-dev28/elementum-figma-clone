@@ -156,6 +156,43 @@
   /* Width of the Figma design frame. The site shell is capped here so the
      layout stays fixed-width on large screens instead of stretching. */
   --container-site: 1440px;
+
+  /* Subtle idle motion for the hero wiggly lines. The two lines use the same
+     keyframes but different durations so they drift out of sync. */
+  --animate-wiggle-drift: wiggle-drift 6s ease-in-out infinite;
+  --animate-wiggle-drift-slow: wiggle-drift 8s ease-in-out infinite;
+
+  /* Gentle idle float for the hero purple half-circle. */
+  --animate-half-circle-float: half-circle-float 7s ease-in-out infinite;
+}
+
+@keyframes wiggle-drift {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+@keyframes half-circle-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-4deg);
+  }
+}
+
+/* Respect users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  .animate-wiggle-drift,
+  .animate-wiggle-drift-slow,
+  .animate-half-circle-float {
+    animation: none;
+  }
 }
 
 @layer base {
